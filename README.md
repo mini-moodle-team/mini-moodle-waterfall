@@ -1,6 +1,6 @@
 # Mini Moodle（Waterfall + AI）
 
-模仿 Moodle 的課程網站。本 repo 為軟體工程期中專案 **Waterfall + AI** 組的工作區，依 Waterfall 流程進行到 Requirement Analysis（需求分析），並完成 UML 與架構雛形。
+模仿 Moodle 的課程網站。本 repo 為軟體工程期中專案 **Waterfall + AI** 組的工作區，依 Waterfall 流程進行到 Requirement Analysis（需求分析），並預計完成 UML 與架構雛形。
 
 ## 文件導覽
 
@@ -23,5 +23,5 @@
 ## AI 使用規則
 
 - AI 可以起草，只有組員可以決定採用。
-- 每次使用 AI 都記錄在 `ai-log/`：工具/模型、問了什麼、採用或拒絕及原因、花費時間。
+- 每次使用 AI 都記錄在 `ai-log/`：詢問內容、採用內容、修改或拒絕內容、理由、人工審查者、時間影響。
 - 不在 prompt 中放入個資或機密資料。
