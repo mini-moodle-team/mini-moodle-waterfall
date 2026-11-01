@@ -5,27 +5,18 @@
 **Version：** 0.1（草稿）
 **By：** Mini Moodle Waterfall 組
 
-## Version History（版本紀錄）
+### Version History（版本紀錄）
 
-| Version | Author | Version description | Date completed |
-| --- | --- | --- | --- |
-| 0.1 |  | SRS 骨架建立 |  |
+| 版本 | 日期 | 修改者 | 修改內容 | 修改原因 |
 
-## Approval History（簽核紀錄）
+### Review History（審查紀錄）
 
-| Approving party | Version approved | Signature | Date |
-| --- | --- | --- | --- |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| 日期 | 審查者 | 審查範圍（PR 編號） | 發現的問題 | 處理結果 |
 
-## Review History（審查紀錄）
+### Approval History（簽核紀錄）
 
-| Reviewer | Version reviewed | Signature | Date |
-| --- | --- | --- | --- |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| 版本 | 簽核者 | 角色 | 日期 |
+
 
 ## Table of Contents
 
@@ -110,6 +101,10 @@
 ### 4.8 Other（其他）
 
 ## 5. Assumptions and Dependencies（假設與相依性）
+
+| 編號 | 假設 | 若假設不成立的影響 | 來源 |
+| --- | --- | --- | --- |
+| AS-1 | 使用者註冊時會誠實選擇自己的身分，系統不驗證使用者是否真的是教師或學生。已知限制：一般使用者可自行註冊為教師並建立課程；團隊接受此限制，以優先完成可用系統。 | 學生可能註冊為教師並建立課程；教師驗證機制（例如教師驗證碼）列為未來功能 | D-01 |
 
 ## 6. Definitions and Acronyms（名詞定義與縮寫）
 
