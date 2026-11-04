@@ -1,6 +1,6 @@
 # Mini Moodle Waterfall 組：工作流程
 
-> 最後修改：2026/11/1
+> 最後修改：2026/11/4
 
 ## 流程
 
@@ -16,7 +16,9 @@
 | --- | --- |
 | RA | 1. Introduction、2. Functional Requirements、5. Assumptions and Dependencies、6. Definitions and Acronyms |
 | SD | 3. External Interface Requirements、4. Non-functional Requirements |
-| QA | 開頭三張紀錄表、審查 |
+| QA | 開頭文件資訊（Date、Version）、三張紀錄表、審查 |
+
+7. References 不指定負責人，引用新資料的人自行補充。
 
 ## UML 與架構雛形分工
 
@@ -24,7 +26,15 @@
 | --- | --- |
 | SD | 主要負責：UML、架構雛形 |
 | QA | 協助 SD、審查 |
-| RA | 處理需求變更（更新決定表與 SRS） |
+| RA | 處理需求變更（更新 SRS） |
+
+## 需求變更（SRS v1.0 簽核後）
+
+- 決定表為需求獲取階段的紀錄，之後不再更新
+- 需求變更直接修改 SRS，並開 PR 送審
+- 新增或修改的需求，來源寫「變更：PR #編號」
+- 變更原因記錄在 SRS 的 Version History「修改原因」欄
+- 變更影響 UML 或架構雛形時，在 PR 描述中說明影響範圍
 
 ## QA 負責的 SRS 開頭紀錄表
 
