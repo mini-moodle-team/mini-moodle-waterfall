@@ -7,7 +7,7 @@
 | 路徑 | 內容 |
 | --- | --- |
 | `docs/waterfall-workflow.md` | 工作流程與分工 |
-| `docs/interview-notes/` | 需求獲取問卷回覆與需求決定表（SRS 需求的來源） |
+| `docs/elicitation-notes/` | 需求獲取問卷回覆與需求決定表（SRS 需求的來源） |
 | `docs/SRS.md` | 軟體需求規格書（Software Requirements Specification） |
 | `uml/` | UML 原始碼（PlantUML），`uml/images/` 放匯出的圖 |
 | `src/` | 架構雛形（技術選型確定後建立） |
