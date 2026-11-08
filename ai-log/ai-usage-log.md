@@ -21,6 +21,7 @@
 | 11/08 | SRS | Claude | 對照 QA 的第 3 章草稿，找出 EIR 缺少的內容並更新 | 新增 EIR-1.5、2.4、3.6；EIR-3.1、14.3 補充內容；課程頁改為顯示最新 3 則公告 | EIR-1.5、2.4 的來源 FR 與優先度 AI 推測有誤，已改為 FR-1.8（Low）、FR-2.3（Medium）；3 則公告為 SD 決定 | 補上 QA 草稿有、本版沒有的內容 | SD（本人）；PR 由 RA、QA 審查 | 節省約30分鐘 |
 | 11/08 | SRS | Claude | 參考 QA 的第 4 章草稿撰寫 NFR | 保留 QA 的 5 條 NFR，補上優先度並移除狀態欄 | NFR-COM-01、COM-02 改為與 EIR-14.3、12.4 一致；NFR-SEC-02 來源改為具體 FR | 來源需可追溯；FR-1.4 改為引用 NFR-SEC-01 | SD（本人）；PR 由 RA、QA 審查 | 節省約45分鐘 |
 | 11/08 | SRS | Claude | 依 RA 審查意見修改第 3 章 | EIR-5.2、7.1 改為顯示全部公告；刪除 EIR-12.3；EIR-4.1、5.4、7.2、9.3、11.2 補上送出／儲存按鈕，新增 EIR-8.4 | AI 先前建議的「課程頁只顯示最新 3 則公告」被 RA 否決；按鈕名稱由 SD 決定 | 與 FR-6.3 一致；減少實作量；FR 要求的建立、編輯功能需要按鈕 | SD（本人）；PR 由 RA、QA 審查 | 節省約15分鐘 |
+| 11/09 | SRS | Codex | 協助根據 GitHub PR 紀錄整理 SRS 的 Version History、Review History 與 Approval History | 採用版本與審查紀錄的摘要草稿 | Approval History 暫留空白 | PR Approve 不等於 SRS v1.0 簽核，須等三人實際確認後再填 | QA | 節省約15分鐘 |
 ## AI 出錯的例子
 
 - AI 一開始宣稱需求追溯矩陣是必交項目，查證作業 PDF 後發現只是建議的 AI 用途，並非必要
