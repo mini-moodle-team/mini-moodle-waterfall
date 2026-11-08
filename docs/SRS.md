@@ -8,14 +8,26 @@
 ### Version History（版本紀錄）
 
 | 版本 | 日期 | 修改者 | 修改內容 | 修改原因 |
+| --- | --- | --- | --- | --- |
+| 0.1（草稿） | 2026-11-01 | cloudberry317（RA） | [PR #1](https://github.com/mini-moodle-team/mini-moodle-waterfall/pull/1)：建立 SRS 骨架與三張紀錄表，補入 AS-1。 | 完成需求獲取階段，建立後續撰寫 SRS 的基礎。 |
+| 0.1（草稿） | 2026-11-04 | cloudberry317（RA） | [PR #2](https://github.com/mini-moodle-team/mini-moodle-waterfall/pull/2)：新增第 1、2、5、6 章初稿，補充第 7 章參考資料。 | 將需求決定表整理為正式規格草稿。 |
+| 0.1（草稿） | 2026-11-09 | Xyvlio（SD） | [PR #4](https://github.com/mini-moodle-team/mini-moodle-waterfall/pull/4)：補齊第 3、4 章；更新 FR-1.4、FR-4.6，新增 FR-8.12～FR-8.15。 | 補齊介面與非功能需求，並納入 RA 已確認的功能細節。 |
 
 ### Review History（審查紀錄）
 
 | 日期 | 審查者 | 審查範圍（PR 編號） | 發現的問題 | 處理結果 |
+| --- | --- | --- | --- | --- |
+| 2026-10-31 | youchentsai（QA） | [PR #1－第一輪](https://github.com/mini-moodle-team/mini-moodle-waterfall/pull/1#pullrequestreview-5722457908) | 八項核心功能未列出；D-01 風險與 D-02 固定身分未交代清楚；紀錄表及 AI Log 規則需補充。 | RA 補上核心功能、風險說明、固定身分定義與共同規則；SRS 與 workflow 的欄位在下一輪確認。 |
+| 2026-11-01 | Xyvlio（SD） | [PR #1－補充審查](https://github.com/mini-moodle-team/mini-moodle-waterfall/pull/1#issuecomment-6546807944) | D-02 需依澄清更正為 2:1，並說明本版不納入助教；AI Log 的時間與人工審查者需補齊。 | RA 更新決定表及 AI Log，保留 CSV 原始回覆；SD 複查後 Approve。 |
+| 2026-11-01 | youchentsai（QA） | [PR #1－第二輪](https://github.com/mini-moodle-team/mini-moodle-waterfall/pull/1#pullrequestreview-5726550278) | 決定表已引用 AS-1，但 SRS 尚未補上；審查與簽核紀錄表欄位和 workflow 不一致。 | RA 補入 AS-1 並統一欄位；QA 複查後 Approve。 |
+| 2026-11-04 | youchentsai（QA） | [PR #2－SRS 初稿](https://github.com/mini-moodle-team/mini-moodle-waterfall/pull/2#pullrequestreview-5769362058) | AI Log 的時間影響過於籠統；FR-1.4 尚未引用確切的 NFR 編號。 | AI Log 補上時間影響後，QA Approve；FR-1.4 延至 PR #4，已改為引用 NFR-SEC-01。 |
+| 2026-11-08 | cloudberry317（RA） | [PR #4－需求審查](https://github.com/mini-moodle-team/mini-moodle-waterfall/pull/4#pullrequestreview-5817219233) | 公告需在課程頁顯示全部；未儲存表單提示超出本版範圍；六處表單需補送出或儲存方式。 | SD 更新 EIR-5.2、EIR-7.1，刪除 EIR-12.3 及其引用，補齊六處操作並新增 EIR-8.4。 |
+| 2026-11-08 | youchentsai（QA） | [PR #4－修正後複查](https://github.com/mini-moodle-team/mini-moodle-waterfall/pull/4#pullrequestreview-5817901593) | 已核對 RA 提出的三項修正；新增 EIR-8.4 未改變既有留言權限。 | 修正均已完成，QA Approve。 |
 
 ### Approval History（簽核紀錄）
 
 | 版本 | 簽核者 | 角色 | 日期 |
+| --- | --- | --- | --- |
 
 
 ## Table of Contents
