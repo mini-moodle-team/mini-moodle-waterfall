@@ -1,8 +1,8 @@
 # Software Requirements Specification（軟體需求規格書）
 
 **Project name：** Mini Moodle
-**Date：**
-**Version：** 0.1（草稿）
+**Date：** 2026-11-09
+**Version：** 1.0
 **By：** Mini Moodle Waterfall 組
 
 ### Version History（版本紀錄）
@@ -12,6 +12,7 @@
 | 0.1（草稿） | 2026-11-01 | cloudberry317（RA） | [PR #1](https://github.com/mini-moodle-team/mini-moodle-waterfall/pull/1)：建立 SRS 骨架與三張紀錄表，補入 AS-1。 | 完成需求獲取階段，建立後續撰寫 SRS 的基礎。 |
 | 0.1（草稿） | 2026-11-04 | cloudberry317（RA） | [PR #2](https://github.com/mini-moodle-team/mini-moodle-waterfall/pull/2)：新增第 1、2、5、6 章初稿，補充第 7 章參考資料。 | 將需求決定表整理為正式規格草稿。 |
 | 0.1（草稿） | 2026-11-09 | Xyvlio（SD） | [PR #4](https://github.com/mini-moodle-team/mini-moodle-waterfall/pull/4)：補齊第 3、4 章；更新 FR-1.4、FR-4.6，新增 FR-8.12～FR-8.15。 | 補齊介面與非功能需求，並納入 RA 已確認的功能細節。 |
+| 1.0 | 2026-11-09 | youchentsai（QA） | [PR #5](https://github.com/mini-moodle-team/mini-moodle-waterfall/pull/5)：完成整份 SRS 的共同審查，補上定版資訊與三人簽核紀錄。 | 將已確認的需求定為 v1.0，作為後續 UML 與架構設計的依據。 |
 
 ### Review History（審查紀錄）
 
@@ -28,6 +29,9 @@
 
 | 版本 | 簽核者 | 角色 | 日期 |
 | --- | --- | --- | --- |
+| 1.0 | cloudberry317 | RA | 2026-11-09 |
+| 1.0 | Xyvlio | SD | 2026-11-09 |
+| 1.0 | youchentsai | QA | 2026-11-09 |
 
 
 ## Table of Contents
