@@ -1,1 +1,88 @@
+@startuml
+left to right direction
+skinparam shadowing false
+actor 訪客 as V
+actor 學生 as S
+actor 教師 as T
 
+rectangle "Mini Moodle" {
+  usecase "註冊" as U1
+  usecase "登入 / 登出" as U2
+
+  usecase "以課碼加入課程" as S1
+  usecase "退出課程" as S2
+  usecase "繳交 / 重新繳交作業 PDF" as S3
+  usecase "查看成績與評語" as S4
+
+  usecase "查看課程列表與課程頁" as C1
+  usecase "查看成員名單" as C2
+  usecase "查看公告" as C3
+  usecase "查看作業並下載附件" as C4
+  usecase "發表留言" as C5
+  usecase "編輯 / 刪除自己的留言" as C6
+
+  usecase "建立課程" as T1
+  usecase "編輯課程、暫停 / 恢復課碼" as T2
+  usecase "手動加入學生" as T3
+  usecase "發布 / 編輯 / 刪除公告" as T4
+  usecase "刪除任何留言" as T5
+  usecase "建立 / 編輯 / 刪除作業" as T6
+  usecase "查看繳交狀況總表" as T7
+  usecase "下載繳交檔案並批改" as T8
+  usecase "發布成績" as T9
+}
+
+U1 -[hidden]right- U2
+U2 -[hidden]right- S1
+S1 -[hidden]right- S2
+S2 -[hidden]right- S3
+S3 -[hidden]right- S4
+S4 -[hidden]right- C1
+C1 -[hidden]right- C2
+C2 -[hidden]right- C3
+C3 -[hidden]right- C4
+C4 -[hidden]right- C5
+C5 -[hidden]right- C6
+C6 -[hidden]right- T1
+T1 -[hidden]right- T2
+T2 -[hidden]right- T3
+T3 -[hidden]right- T4
+T4 -[hidden]right- T5
+T5 -[hidden]right- T6
+T6 -[hidden]right- T7
+T7 -[hidden]right- T8
+T8 -[hidden]right- T9
+
+V -- U1
+V -- U2
+S -- U2
+U2 -- T
+
+S -- S1
+S -- S2
+S -- S3
+S -- S4
+
+S -- C1
+S -- C2
+S -- C3
+S -- C4
+S -- C5
+S -- C6
+C1 -- T
+C2 -- T
+C5 -- T
+C6 -- T
+C3 -[hidden]- T
+C4 -[hidden]- T
+
+T1 -- T
+T2 -- T
+T3 -- T
+T4 -- T
+T5 -- T
+T6 -- T
+T7 -- T
+T8 -- T
+T9 -- T
+@enduml
