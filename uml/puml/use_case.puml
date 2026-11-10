@@ -7,7 +7,8 @@ actor 教師 as T
 
 rectangle "Mini Moodle" {
   usecase "註冊" as U1
-  usecase "登入 / 登出" as U2
+  usecase "登入" as U2
+  usecase "登出" as U3
 
   usecase "以課碼加入課程" as S1
   usecase "退出課程" as S2
@@ -33,7 +34,8 @@ rectangle "Mini Moodle" {
 }
 
 U1 -[hidden]right- U2
-U2 -[hidden]right- S1
+U2 -[hidden]right- U3
+U3 -[hidden]right- S1
 S1 -[hidden]right- S2
 S2 -[hidden]right- S3
 S3 -[hidden]right- S4
@@ -53,29 +55,33 @@ T6 -[hidden]right- T7
 T7 -[hidden]right- T8
 T8 -[hidden]right- T9
 
+' 訪客：只有註冊、登入
 V -- U1
 V -- U2
-S -- U2
-U2 -- T
 
+' 學生
+S -- U2
+S -- U3
 S -- S1
 S -- S2
 S -- S3
 S -- S4
-
 S -- C1
 S -- C2
 S -- C3
 S -- C4
 S -- C5
 S -- C6
+
+' 教師
+U2 -- T
+U3 -- T
 C1 -- T
 C2 -- T
+C3 -- T
+C4 -- T
 C5 -- T
 C6 -- T
-C3 -[hidden]- T
-C4 -[hidden]- T
-
 T1 -- T
 T2 -- T
 T3 -- T
