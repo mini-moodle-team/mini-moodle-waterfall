@@ -1,0 +1,70 @@
+@startuml
+skinparam shadowing false
+hide circle
+enum Role {
+  TEACHER
+  STUDENT
+}
+class User {
+  id
+  account {unique}
+  passwordHash
+  name
+  role : Role
+}
+class Course {
+  id
+  name
+  description
+  deptCode
+  courseCode {unique}
+  codeSuspended : bool
+}
+class Enrollment {
+  joinedAt
+}
+class Announcement {
+  title
+  body
+  createdAt
+}
+class Message {
+  body
+  createdAt
+}
+class Assignment {
+  title
+  description
+  dueAt
+  maxScore
+  attachmentOriginalName
+  attachmentStoredName
+  gradesPublished : bool
+}
+class Submission {
+  originalName
+  storedName
+  submittedAt
+  isLate : bool
+  score
+  comment
+}
+note right of Course
+  deptCode: 2 個大寫字母
+  courseCode: deptCode + 7 位數字
+end note
+note right of Submission
+  score 介於 0 到 maxScore，可為空
+  每位學生每份作業最多一筆
+end note
+User --> Role
+User "1" -- "0..*" Course : 教師建立
+Course "1" *-- "0..*" Enrollment
+User "1" -- "0..*" Enrollment : 學生加入
+Course "1" *-- "0..*" Announcement
+Course "1" *-- "0..*" Message
+Course "1" *-- "0..*" Assignment
+Assignment "1" *-- "0..*" Submission : 刪除作業時一併刪除
+User "1" -- "0..*" Submission : 學生繳交
+User "1" -- "0..*" Message : 作者
+@enduml
