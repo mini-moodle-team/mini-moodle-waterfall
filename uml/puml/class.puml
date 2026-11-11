@@ -37,15 +37,15 @@ class Assignment {
   description
   dueAt
   maxScore
-  attachmentOriginalName
-  attachmentStoredName
+  attachmentOriginalName [0..1]
+  attachmentStoredName [0..1]
   gradesPublished : bool
 }
 class Submission {
   originalName
   storedName
   submittedAt
-  isLate : bool
+  /isLate : bool
   score
   comment
 }
@@ -56,6 +56,10 @@ end note
 note right of Submission
   score 介於 0 到 maxScore，可為空
   每位學生每份作業最多一筆
+  /isLate 不儲存：submittedAt > Assignment.dueAt
+end note
+note right of Assignment
+  附件可不上傳
 end note
 User --> Role
 User "1" -- "0..*" Course : 教師建立
