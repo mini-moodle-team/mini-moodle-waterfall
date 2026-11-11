@@ -1,0 +1,28 @@
+@startuml
+skinparam shadowing false
+title 一次請求的處理流程（Django MVT）
+start
+:瀏覽器送出請求;
+if (已登入？\n（註冊頁、登入頁除外）) then (否)
+  :導向登入頁;
+  stop
+else (是)
+endif
+:urls.py\n依網址找到對應的 view;
+if (網址或資料存在？) then (否)
+  :導回課程列表;
+  stop
+else (是)
+endif
+:permissions.py\n檢查身分與課程成員資格;
+if (有權限？) then (否)
+  :導回課程頁或課程列表;
+  stop
+else (是)
+endif
+:views.py\n處理請求;
+:forms.py 檢查輸入\nmodels.py 讀寫資料庫;
+:templates\n產生 HTML 頁面;
+:回應給瀏覽器;
+stop
+@enduml
